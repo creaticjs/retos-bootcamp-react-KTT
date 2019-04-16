@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>K Music</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--navbar-->
+    <nav id="header">
+        <div class="nav-wrapper container">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    
+            </ul>
+        </div>
+    </nav>
+    <!-- /navbar-->
+
+    <!--Cards-->        
+    <div class="container section">
+        <div class="row">
+            <div class="col m3"></div>
+            <div class="col m9">
+                <h5><i class="material-icons">headset</i>Playlist</h5>
+                <div class="divider"></div>
+
+                <div class="row" id="covers"></div>
+                <div class="row">
+                    <table id="playlist">
+                    </table>
+                </div>          
+    
+            </div>
+        </div>
+    </div>
+    <!--/Cards-->
+    
+    <!--sidebar -->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="background">
+                <img src="music2.png" width="300px" height="150px">
+            </div>
+    
+        <li><a href="index.html" class="purple-text"><i class="material-icons">flight</i>Trending Colombia</a></li>
+        <li><a href="playlist.html" class="orange-text"><i class="material-icons">headset</i>Playlists</a></li>
+        <li><a href="recommended.html" class="green-text"><i class="material-icons">toys</i>Recommended</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Search</a></li>
+        <li><a class="waves-effect" href="songs.html">Songs</a></li>
+        <li><a class="waves-effect" href="artists.html">Artists</a></li>
+    </ul>
+    <!--/sidebar-->
+    
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="playlist.js"></script>
+    
+</body> 
+</html>

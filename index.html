@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Retos Kelly T</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Retos Kelly T </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#challenge1">Reto 1</a></li>
+        <li><a href="#challenge2">Reto 2</a></li>
+        <li><a href="#challenge3">Reto 3</a></li>
+        <li><a href="#challenge4">Reto 4</a></li>
+        <li><a href="#challenge5">Reto 5</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Bootcamp</h1> 
+  <p>React Full Stack</p> 
+</div>
+
+<!-- Container (challenge1) -->
+<div id="challenge1" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Reto 1</h2><br>
+      <h4><strong>CALCULADORA :</strong>Calculadora utilizando vanilla javascript. La calculadora realiza las operaciones básicas suma, resta, multiplicación, division, delete y realiza operaciones con números decimales</h4>
+      <a href="./1-reto1/calculator.html" class="btn btn-success btn-lg">Solución</a>
+    </div>
+    <div class="col-sm-4">
+      <img class="challenge-icon" src="./img/calculator.png">
+    </div>
+  </div>
+</div>
+
+<!-- Container (challenge2) -->
+<div  id="challenge2" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="challenge-icon" src="./img/checklist.png">
+    </div>
+    <div class="col-sm-8">
+      <h2>Reto 2</h2><br>
+      <h4><strong>EJERCICIOS JAVASCRIPT :</strong> Problemas desarrollados en javascript. Involucra conceptos como condicionales, bucles, operadores, arreglos, etc</h4><br>
+      <a href="./2-reto2/reto2.html" class="btn btn-success btn-lg">Solución</a>
+    </div>
+  </div>
+</div>
+
+<!-- Container (challenge3) -->
+<div  id="challenge3" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Reto 3</h2><br>
+      <h4><strong>EJERCICIOS JAVASCRIPT :</strong>Problemas desarrollados en javascript. Involucra conceptos como condicionales, bucles, operadores, arreglos, etc</h4>
+      <a href="./3-reto3/reto3.html" class="btn btn-success btn-lg">Solución</a>
+    </div>
+    <div class="col-sm-4">
+      <img class="challenge-icon" src="./img/check-list.png">
+    </div>
+  </div>
+</div>
+
+<!-- Container (challenge4) -->
+<div id="challenge4" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="challenge-icon" src="./img/api.png">
+    </div>
+    <div class="col-sm-8">
+      <h2>Reto 4</h2><br>
+      <h4><strong>CONSUMIENDO API CON JAVASCRIPT :</strong>Programa en javascript que consume los servicios de Deezer API. Incluye conceptos como promesas, async await, REST, etc</h4>
+      <h5>NOTA: En caso de presentar problemas CORS instalar la extension chrome <a target="_blank" href="https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc">Moesif Orign & CORS Changer</a></h5>
+      <a href="./4-reto4/index.html" class="btn btn-success btn-lg">Solución</a>
+    </div>
+  </div>
+</div>
+
+<!--Container (challenge5)-->
+<div id="challenge5" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Reto 5</h2><br>
+      <h4><strong>FACTURA ELECTRÓNICA CON VUE.JS :</strong>Factura electrónica realizada con Vue.js. Incluye cálculo reactivo de precios</h4>
+      <a href="./5-reto5/index.html" class="btn btn-success btn-lg">Solución</a>
+  </div>
+<div class="col-sm-4">
+      <img class="challenge-icon" src="./img/receipt.png">
+    </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>"Desafíate cada día a ti mismo para ser mejor de lo que fuiste ayer"</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
